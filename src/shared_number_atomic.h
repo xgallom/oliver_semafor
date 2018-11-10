@@ -8,8 +8,7 @@ class SharedNumber {
 
 	void cpuRelax() const
 	{
-		for(int n = 0; n < 10; ++n)
-			asm("pause\n");
+		asm("pause\n");
 	}
 
 public:
